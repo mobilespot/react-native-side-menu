@@ -148,6 +148,7 @@ export default class SideMenu extends React.PureComponent {
     if (this.isOpen) {
       overlay = (
         <TouchableWithoutFeedback
+          testID={'menu_overlay'}
           onPress={(e) => {
             if(!this.props.allowOverlayPressPropagation) {
               e.stopPropagation()
